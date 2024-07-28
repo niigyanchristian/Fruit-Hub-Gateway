@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use(process.env.USER_SERVICE_ENDPOINT, proxy(process.env.USER_SERVICE_URL));
-app.use(process.env.SHOPPING_SERVICE_ENDPOINT, proxy(proxyprocess.env.SHOPPING_SERVICE_URL));
+app.use(process.env.SHOPPING_SERVICE_ENDPOINT, proxy(process.env.SHOPPING_SERVICE_URL));
 app.use(process.env.DELIVERY_SERVICE_ENDPOINT, proxy(process.env.DELIVERY_SERVICE_URL));
 app.use(process.env.PRODUCT_SERVICE_ENDPOINT, proxy(process.env.PRODUCT_SERVICE_URL)); // products
 
